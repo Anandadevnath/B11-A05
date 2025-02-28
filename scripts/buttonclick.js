@@ -12,8 +12,8 @@ document.querySelectorAll('.status.completed').forEach(function (button) {
         button.style.backgroundColor = '#4a90e2';
 
         if (parseInt(idTaskElement.textContent) === 0) {
-            alert('Congratulations! You have completed all tasks!');
             alert('Board updated successfully!');
+            alert('Congratulations! You have completed all tasks!');
         } else {
             alert('Board updated successfully!');
         }

@@ -22,7 +22,7 @@
                 <span class="count">23</span>
             </div>
             <div class="avatar">
-                <img class="theme-logo" src=".//assets/theme-btn.png" alt="">
+                <img class="theme-logo" src="./assets/theme-btn.png" alt="">
             </div>
         </div>
     </div>
@@ -43,10 +43,10 @@
             </div>
         </div>
         <div class="date-box">
-            <div class="date-icon">📆</div>
+            <img class="calender-logo" src="./assets/calender.png" alt="">
             <div class="date-text">
                 <p>Wed ,</p>
-                <h3>Jul 28 2025</h3>
+                <h3 id="current-date"></h3>
             </div>
         </div>
     </div>
@@ -78,7 +78,7 @@
             <h3>Optimize Home page</h3>
             <p class="task-desc">Debug using Chrome DevTools, check for overlapping elements.</p>
             <div class="footer">
-                <span class="deadline">Deadline<br><strong>21 March 2025</strong></span>
+                <span class="deadline">Deadline<br><strong>12 March 2025</strong></span>
                 <button class="status completed">Completed</button>
             </div>
         </div>
@@ -88,7 +88,7 @@
             <h3>Add new emoji 🙌</h3>
             <p class="task-desc">Debug using Chrome DevTools, check for overlapping elements.</p>
             <div class="footer">
-                <span class="deadline">Deadline<br><strong>21 March 2025</strong></span>
+                <span class="deadline">Deadline<br><strong>1 March 2025</strong></span>
                 <button class="status completed">Completed</button>
             </div>
         </div>
@@ -98,7 +98,7 @@
             <h3>Integrate OpenAI API</h3>
             <p class="task-desc">Debug using Chrome DevTools, check for overlapping elements.</p>
             <div class="footer">
-                <span class="deadline">Deadline<br><strong>21 March 2025</strong></span>
+                <span class="deadline">Deadline<br><strong>2 March 2025</strong></span>
                 <button class="status completed">Completed</button>
             </div>
         </div>
@@ -108,7 +108,7 @@
             <h3>Improve Job searching</h3>
             <p class="task-desc">Debug using Chrome DevTools, check for overlapping elements.</p>
             <div class="footer">
-                <span class="deadline">Deadline<br><strong>21 March 2025</strong></span>
+                <span class="deadline">Deadline<br><strong>6 March 2025</strong></span>
                 <button class="status completed">Completed</button>
             </div>
         </div>
@@ -118,7 +118,9 @@
     <div class="sidebar">
         <div class="header">
             <img src="./assets/activity.png" alt="History Icon">
-            Activity Log
+            <span class="activity-text">
+                Activity Log
+            </span>
         </div>
         <button class="clear-btn">Clear History</button>
         <div class="log-entry"></div>
@@ -130,6 +132,7 @@
     <script src="./scripts/cleartask.js"></script>
     <script src="./scripts/randomcolor.js"></script>
     <script src="./scripts/link.js"></script>
+    <script src="./scripts/date.js"></script>
 </body>
 
 </html>

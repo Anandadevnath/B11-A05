@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const ampm = hours >= 12 ? 'PM' : 'AM';
             hours = hours % 12;
             hours = hours ? hours : 12;
-            const time = `${String(hours).padStart(2, '0')}:${minutes}:${seconds} ${ampm}`;
+            const time = `${String(hours).padStart(2)}:${minutes}:${seconds} ${ampm}`;
             const message = `You have completed the task "${taskName}" at ${time}`;
 
             const logItem = document.createElement("p");
