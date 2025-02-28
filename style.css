@@ -1,0 +1,408 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f1f6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 16px 20px;
+  border-radius: 12px;
+  max-width: 84vw;
+  margin: 30px auto;
+  border-radius: 12px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 15px;
+}
+
+.logo-icon {
+  width: 24px;
+  height: 24px;
+  background-color: #3b82f6;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.logo-text {
+  font-size: 22px;
+  color: #64748b;
+}
+
+.bold {
+  font-weight: bold;
+  color: #0f172a;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.notifications {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.D-logo {
+  width: 40px;
+}
+.checkbox-logo {
+  width: 21px;
+}
+.count {
+  font-size: 17px;
+  font-weight: bold;
+}
+.theme-logo {
+  width: 27px;
+  gap: 10px;
+  margin-left: 27px;
+  margin-right: 28px;
+  cursor: pointer;
+}
+
+/* Home */
+
+.task-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  max-width: 60vw;
+  font-family: Arial, sans-serif;
+  margin: auto;
+  margin-left: 104px;
+}
+
+.task-box,
+.date-box {
+  display: flex;
+  align-items: center;
+  background: #f5f7fb;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.middle-box {
+  background: linear-gradient(90deg, #5b44e2, #9fbde0);
+  color: white;
+  text-align: center;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  cursor: pointer;
+}
+
+.task-box .icon,
+.date-box .date-icon,
+.middle-box .calendar-icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.task-text h3,
+.date-text h3 {
+  margin: 0;
+  color: #002b45;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.task-text p,
+.date-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.middle-box p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.middle-box strong {
+  font-size: 22px;
+  margin-left: -91px;
+}
+
+.middle-text-p {
+  font-size: 22px;
+}
+.board-logo {
+  margin-left: -7vw;
+  margin-right: 22px;
+}
+.checkbox-2-logo {
+  width: 22px;
+  margin-left: 11px;
+  margin-right: 21px;
+}
+
+/* Cards */
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  background-color: white;
+  margin-left: 107px;
+  margin-right: 16vw;
+  margin-top: 30px;
+  border-radius: 13px;
+  width: 0vw;
+}
+
+.task-card {
+  background: #fff5f5;
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 15vw;
+  width: 282px;
+  border-radius: 15px;
+}
+
+.company {
+  background: #eaf2ff;
+  color: #333;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  align-self: flex-start;
+}
+
+h3 {
+  font-size: 22px;
+  margin: 10px 0;
+  color: #002b45;
+}
+
+.task-desc {
+  font-size: 14px;
+  color: #888;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 6px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  height: 74px;
+  width: 17vw;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.deadline {
+  font-size: 14px;
+  color: #555;
+}
+
+.deadline strong {
+  color: #002b45;
+}
+
+.status {
+  background: #dfe7f5;
+  color: #4a90e2;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 16px;
+}
+
+.status.completed {
+  background: #2c2cff;
+  color: white;
+  padding: 9px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+.status.completed:hover {
+  background: #4a90e2;
+}
+
+@media (max-width: 768px) {
+  .task-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .task-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  width: 300px;
+  border-radius: 10px;
+  background: white;
+  padding: 20px;
+  margin: auto;
+  margin-top: -715px;
+  margin-left: 71vw;
+  height: 42vw;
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.header img {
+  width: 20px;
+}
+.clear-btn {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  background: #4c5fd5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.clear-btn:hover {
+  background: #364fc7;
+}
+.log-message {
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 8px;
+  padding: 10px;
+  background: #f0f2f5;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.container-all {
+  background-color: white;
+}
+
+/* main */
+
+.heading {
+  text-align: center;
+  margin: 20px 0;
+  color: #333;
+}
+
+.blog {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 5px solid #3b82f6;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.blog h2 {
+  font-size: 18px;
+  color: #333;
+}
+
+.blog p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  border-bottom: 2px solid #ddd;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+.back-button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.back-button:hover {
+  background-color: #2563eb;
+}
+
+.heading {
+  text-align: center;
+  margin: 20px 0;
+  color: #333;
+}
+
+.blog {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 5px solid #3b82f6;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.blog h2 {
+  font-size: 18px;
+  color: #333;
+}
+
+.blog p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+.main-section{
+  width: 85vw;
+  margin-left: 7vw;
+}

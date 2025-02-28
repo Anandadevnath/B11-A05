@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DevBoard Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img class="D-logo" src="./assets/logo.png" alt="">
+            <span class="logo-text">Dev<span class="bold">Board</span></span>
+        </div>
+        <div class="right-section">
+            <div class="notifications">
+                <img class="checkbox-logo" src="./assets/checkbox.png" alt="">
+                <span class="count">23</span>
+            </div>
+            <div class="avatar">
+                <img class="theme-logo" src=".//assets/theme-btn.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Home -->
+    <div class="task-section">
+        <div class="task-box">
+            <img class="checkbox-2-logo" src="./assets/checkbox.png" alt="">
+            <div class="task-text">
+                <p>Task Assigned</p>
+                <h3 class="id-task">6</h3>
+            </div>
+        </div>
+        <div class="middle-box" id="middle-box">
+            <img class="board-logo" src="./assets/board.png" alt="">
+            <div class="middle-text">
+                <p class="middle-text-p">Discover Something<br><strong class="middle-text-s">New Today!</strong></p>
+            </div>
+        </div>
+        <div class="date-box">
+            <div class="date-icon">📆</div>
+            <div class="date-text">
+                <p>Wed ,</p>
+                <h3>Jul 28 2025</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="task-grid">
+        <div class="task-card">
+            <span class="company">ShopEase</span>
+            <h3>Fix Mobile Button Issue</h3>
+            <p class="task-desc">Debug using Chrome DevTools, check for overlapping elements.</p>
+            <div class="footer">
+                <span class="deadline">Deadline<br><strong>21 March 2025</strong></span>
+                <button class="status completed">Completed</button>
+            </div>
+        </div>
+
+        <div class="task-card">
+            <span class="company">CloudSync</span>
+            <h3>Add Dark Mode</h3>
+            <p class="task-desc">Store the user’s preference in localStorage, update CSS variables.</p>
+            <div class="footer">
+                <span class="deadline">Deadline<br><strong>21 March 2025</strong></span>
+                <button class="status completed">Completed</button>
+            </div>
+        </div>
+
+        <div class="task-card">
+            <span class="company">SwiftPay</span>
+            <h3>Optimize Home page</h3>
+            <p class="task-desc">Debug using Chrome DevTools, check for overlapping elements.</p>
+            <div class="footer">
+                <span class="deadline">Deadline<br><strong>21 March 2025</strong></span>
+                <button class="status completed">Completed</button>
+            </div>
+        </div>
+
+        <div class="task-card">
+            <span class="company">Meta</span>
+            <h3>Add new emoji 🙌</h3>
+            <p class="task-desc">Debug using Chrome DevTools, check for overlapping elements.</p>
+            <div class="footer">
+                <span class="deadline">Deadline<br><strong>21 March 2025</strong></span>
+                <button class="status completed">Completed</button>
+            </div>
+        </div>
+
+        <div class="task-card">
+            <span class="company">Google LLC</span>
+            <h3>Integrate OpenAI API</h3>
+            <p class="task-desc">Debug using Chrome DevTools, check for overlapping elements.</p>
+            <div class="footer">
+                <span class="deadline">Deadline<br><strong>21 March 2025</strong></span>
+                <button class="status completed">Completed</button>
+            </div>
+        </div>
+
+        <div class="task-card">
+            <span class="company">Glassdoor</span>
+            <h3>Improve Job searching</h3>
+            <p class="task-desc">Debug using Chrome DevTools, check for overlapping elements.</p>
+            <div class="footer">
+                <span class="deadline">Deadline<br><strong>21 March 2025</strong></span>
+                <button class="status completed">Completed</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="header">
+            <img src="./assets/activity.png" alt="History Icon">
+            Activity Log
+        </div>
+        <button class="clear-btn">Clear History</button>
+        <div class="log-entry"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./scripts/buttonclick.js"></script>
+    <script src="./scripts/sidemsg.js"></script>
+    <script src="./scripts/cleartask.js"></script>
+    <script src="./scripts/randomcolor.js"></script>
+    <script src="./scripts/link.js"></script>
+</body>
+
+</html>
