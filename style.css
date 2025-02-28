@@ -10,11 +10,12 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: 16px 20px;
+  padding: 20px 20px;
   border-radius: 12px;
-  max-width: 84vw;
+  max-width: 83vw;
   margin: 30px auto;
-  border-radius: 12px;
+  border-radius: 10px;
+  margin-left: 108px;
 }
 
 .logo {
@@ -321,43 +322,6 @@ h3 {
   color: #333;
 }
 
-.blog {
-  background-color: #fff;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-left: 5px solid #3b82f6;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-
-.blog h2 {
-  font-size: 18px;
-  color: #333;
-}
-
-.blog p {
-  font-size: 14px;
-  color: #666;
-  line-height: 1.6;
-}
-.container {
-  width: 80%;
-  margin: auto;
-  background-color: white;
-  padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  padding: 10px;
-  border-bottom: 2px solid #ddd;
-}
-
 .logo {
   font-weight: bold;
   font-size: 18px;
@@ -387,9 +351,7 @@ h3 {
   background-color: #fff;
   padding: 15px;
   margin-bottom: 15px;
-  border-left: 5px solid #3b82f6;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .blog h2 {
@@ -402,7 +364,19 @@ h3 {
   color: #666;
   line-height: 1.6;
 }
-.main-section{
+.main-section {
   width: 85vw;
   margin-left: 7vw;
+}
+.desk-btn {
+  background-color: #5353ff;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  margin-right: 19px;
+  cursor: pointer;
+}
+.desk-btn:hover {
+  background-color: #7474ff;
 }
